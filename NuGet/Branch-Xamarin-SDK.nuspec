@@ -4,7 +4,7 @@
     <id>Branch-Xamarin-Linking-SDK</id>
     <title>Branch Xamarin SDK</title>
     <summary>Hosted deep links for your Xamarin-based Android or iOS app by Branch</summary>
-    <version>7.1.2</version>
+    <version>8.1.41</version>
     <authors>Branch Metrics, Inc.</authors>
     <owners>Branch Metrics, Inc.</owners>
 <!--     <iconUrl> https://s3-us-west-1.amazonaws.com/branchhost/branch_icon.png</iconUrl> -->
@@ -43,8 +43,11 @@
     <file src="../Branch-Xamarin-SDK.Droid/bin/Release/Branch-Xamarin-SDK.Droid.dll" target="lib/MonoAndroid" />
     <file src="../Branch-Xamarin-SDK/bin/Release/netstandard1.2/Branch-Xamarin-SDK.dll" target="lib/MonoAndroid" />
     
-    <file src="../Branch-Xamarin-Lib.iOS/bin/Release/Branch-Xamarin-Lib.iOS.dll" target="lib/Xamarin.iOS10" />
-    <file src="../Branch-Xamarin-SDK.iOS/bin/Release/Branch-Xamarin-SDK.iOS.dll" target="lib/Xamarin.iOS10" />
-    <file src="../Branch-Xamarin-SDK/bin/Release/netstandard1.2/Branch-Xamarin-SDK.dll" target="lib/Xamarin.iOS10" />
+    <file src="../Branch-Xamarin-Lib.iOS/bin/Release/xamarin.ios10/Branch-Xamarin-Lib.iOS.dll" target="lib/xamarinios10" />
+    <file src="../Branch-Xamarin-SDK.iOS/bin/Release/Branch-Xamarin-SDK.iOS.dll" target="lib/xamarinios10" />
+    <file src="../Branch-Xamarin-SDK/bin/Release/netstandard1.2/Branch-Xamarin-SDK.dll" target="lib/xamarinios10" />
+    <file src="../Branch-Xamarin-Lib.iOS/Branch.targets" target="build/Branch-Xamarin-Linking-SDK.targets" />
+    <file src="../Branch-Xamarin-Lib.iOS/Branch.targets" target="buildTransitive/Branch-Xamarin-Linking-SDK.targets" />
+    <file src="../Branch-Xamarin-Lib.iOS/bin/Release/xamarin.ios10/Branch-Xamarin-Lib.iOS.resources.zip" target="lib/xamarinios10/Branch-Xamarin-Lib.iOS.resources.zip" />
   </files>
 </package>
